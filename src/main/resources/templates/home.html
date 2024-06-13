@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th=" https://www.thymeleaf.org"
+	xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5" >
+<head>
+<link rel="stylesheet" th:href="@{/css/styles.css}">
+<title>Insert title here</title>
+</head>
+<body>
+	<body>
+	  <div th:fragment="home">
+    <div class="upload-box">
+        <h2>Upload File</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" id="file">
+            <br><br>
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+    </div>
+</body>
+</body>
+</html>
